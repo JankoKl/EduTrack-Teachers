@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Made%20With-%233A3632?style=for-the-badge&labelColor=%233A2D2D&color=%233A2D2D) ![](https://img.shields.io/badge/APEX-%233A3632?style=for-the-badge&logo=oracle&logoColor=%23ca4d3c&labelColor=%233A2D2D&color=%233A2D2D)
+
 ## Summary
 
 **EduTrack** is a database and application developed with Oracle APEX to manage teacher training activities at Elementary School. This tool simplifies training organization, tracks registrations, payments, and attendance, and enables efficient reporting on seminars and teacher progress. [View Screenshots](images/Screenshots)
