@@ -4,7 +4,7 @@
 
 
 
-![Home screen](images/Screenshots/pocetna?raw=true "Database Relationships")
+![Home screen](images/Screenshots/pocetna.png?raw=true "Database Relationships")
 
 
 
