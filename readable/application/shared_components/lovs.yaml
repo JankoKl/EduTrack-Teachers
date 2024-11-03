@@ -1,0 +1,262 @@
+---
+- # ====== List of Values: FEEDBACK_RATING =====================
+  id: 25413517323201834565
+  identification: 
+    name: FEEDBACK_RATING
+
+  subscription: 
+    version-number: 15553830095936
+
+  source: 
+    location: Static Values
+
+  entries: 
+  - # ====== Entry: Positive =====================================
+    id: 25413517641632834565
+    entry: 
+      sequence: 1
+      display: Positive
+      return: 3
+
+    globalization: 
+      template: <span title="#DISPLAY_VALUE#" aria-label="#DISPLAY_VALUE#"><span class="fa fa-smile-o fa-2x feedback-positive" aria-hidden="true" ></span></span>
+
+  - # ====== Entry: Neutral ======================================
+    id: 25413518039290834566
+    entry: 
+      sequence: 2
+      display: Neutral
+      return: 2
+
+    globalization: 
+      template: <span title="#DISPLAY_VALUE#" aria-label="#DISPLAY_VALUE#"><span class="fa fa-emoji-neutral fa-2x feedback-neutral" aria-hidden="true" ></span></span>
+
+  - # ====== Entry: Negative =====================================
+    id: 25413518476642834566
+    entry: 
+      sequence: 3
+      display: Negative
+      return: 1
+
+    globalization: 
+      template: <span title="#DISPLAY_VALUE#" aria-label="#DISPLAY_VALUE#"><span class="fa fa-frown-o fa-2x feedback-negative" aria-hidden="true" ></span></span>
+
+- # ====== List of Values: FEEDBACK_STATUS =====================
+  id: 25413529657192834574
+  identification: 
+    name: FEEDBACK_STATUS
+
+  subscription: 
+    version-number: 15553830096009
+
+  source: 
+    location: Static Values
+
+  entries: 
+  - # ====== Entry: No Action ====================================
+    id: 25413529930712834574
+    entry: 
+      sequence: 1
+      display: No Action
+      return: 0
+
+  - # ====== Entry: Acknowledged =================================
+    id: 25413530376552834574
+    entry: 
+      sequence: 2
+      display: Acknowledged
+      return: 1
+
+  - # ====== Entry: Open =========================================
+    id: 25413530733700834575
+    entry: 
+      sequence: 3
+      display: Open
+      return: 3
+
+  - # ====== Entry: Closed =======================================
+    id: 25413531140141834575
+    entry: 
+      sequence: 4
+      display: Closed
+      return: 4
+
+- # ====== List of Values: STRUKE.NAZIV ========================
+  id: 25414837503321883218
+  identification: 
+    name: STRUKE.NAZIV
+
+  subscription: 
+    version-number: 15553830954700
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: STRUKE
+
+  column-mapping: 
+    return: ID
+    display: NAZIV
+    default-sort: NAZIV
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: PREDAVACI.IME =======================
+  id: 25442383314847401158
+  identification: 
+    name: PREDAVACI.IME
+
+  subscription: 
+    version-number: 15553839210488
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PREDAVACI
+
+  column-mapping: 
+    return: ID
+    display: IME
+    default-sort: IME
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: TIP_SEMINARA.TIP ====================
+  id: 25442384005202401158
+  identification: 
+    name: TIP_SEMINARA.TIP
+
+  subscription: 
+    version-number: 15553839210519
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: TIP_SEMINARA
+
+  column-mapping: 
+    return: ID
+    display: TIP
+    default-sort: TIP
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: NASTAVNICI.IME.PREZIME ==============
+  id: 25446101316658188732
+  identification: 
+    name: NASTAVNICI.IME.PREZIME
+
+  subscription: 
+    version-number: 15554047834696
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PRIJAVE
+
+  column-mapping: 
+    return: SIFRA
+    display: NASTAVNICI_IME_PREZIME
+    default-sort: Use Order By from Query
+
+- # ====== List of Values: SEMINARI.LOKACIJA ===================
+  id: 25446102053565188733
+  identification: 
+    name: SEMINARI.LOKACIJA
+
+  subscription: 
+    version-number: 15553839876940
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: SEMINARI
+
+  column-mapping: 
+    return: ID
+    display: LOKACIJA
+    default-sort: LOKACIJA
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: PRIJAVE.VREME_PRIJAVE ===============
+  id: 25446609663897200898
+  identification: 
+    name: PRIJAVE.VREME_PRIJAVE
+
+  subscription: 
+    version-number: 15553840100786
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PRIJAVE
+
+  column-mapping: 
+    return: ID_SEMINARA
+    display: VREME_PRIJAVE
+    default-sort: VREME_PRIJAVE
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: PRIJAVE.VREME_PRIJAVE_1 =============
+  id: 25446610315679200898
+  identification: 
+    name: PRIJAVE.VREME_PRIJAVE_1
+
+  subscription: 
+    version-number: 15553840100789
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PRIJAVE
+
+  column-mapping: 
+    return: JMBG_NASTAVNIKA
+    display: VREME_PRIJAVE
+    default-sort: VREME_PRIJAVE
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: PRIJAVE.VREME_PRIJAVE_1_2 ===========
+  id: 25446611039047200899
+  identification: 
+    name: PRIJAVE.VREME_PRIJAVE_1_2
+
+  subscription: 
+    version-number: 15553840100794
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PRIJAVE
+
+  column-mapping: 
+    return: SIFRA
+    display: VREME_PRIJAVE
+    default-sort: VREME_PRIJAVE
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: NASTAVNICI.IME ======================
+  id: 25732556768184058124
+  identification: 
+    name: NASTAVNICI.IME
+
+  subscription: 
+    version-number: 15554048965462
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: NASTAVNICI
+
+  column-mapping: 
+    return: JMBG
+    display: IME
+    default-sort: IME
+    sort-direction: Ascending (Nulls Last)
+

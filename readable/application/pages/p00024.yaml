@@ -1,0 +1,724 @@
+---
+# ====== Page: UNOS PRIJAVA ==================================
+id: 24
+identification: 
+  name: UNOS PRIJAVA
+  alias: UNOS-PRIJAVA
+  title: UNOS PRIJAVA
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+css: 
+  inline: |
+    body{
+     background-image: url('#APP_FILES#poz.jpg') !important;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+    }
+    .container{
+     width: 60%;
+     height: 60%;
+    }
+    .footer{
+        width: auto;
+        height: 30%;
+    }
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: New =========================================
+  id: 25455964033400520719
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .footer {
+          background-color: #080707; /* Dodajte # da bi boja bila ispravno prikazana */
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+          padding: 10px; /* Smanjuje visinu footera smanjenjem padding-a */
+          text-align: center;
+          font-size: 14px;
+          color: #ffffff; /* Dodajte # da bi boja bila ispravno prikazana */
+        }
+        .footer h3 {
+          margin: 0;
+          font-size: 16px; /* Smanjuje veličinu fonta za naslov */
+          color: #009933;
+        }
+        .footer p {
+          margin: 3px 0; /* Smanjuje marginu između paragrafa */
+        }
+        .footer .contact-info {
+          margin-top: 5px; /* Smanjuje marginu između kontakt informacija */
+        }
+      </style>
+      </head>
+      <body>
+      
+      <footer class="footer">
+        <h3>OŠ "Đura Jakšić", Konarevo</h3>
+        <p>Adresa: Ibarska 248, Konarevo 36340</p>
+        <p>Radno vreme: 07:00 - 18:00</p>
+        <p>Telefon: 036 821992</p>
+      </footer>
+      
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_05
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noUI
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: UNOS PRIJAVA ================================
+  id: 25732556510004058124
+  identification: 
+    name: UNOS PRIJAVA
+    type: Interactive Report
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: PRIJAVE
+    include-rowid-column: false
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Interactive Report
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  server-cache: 
+    caching: Disabled
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    id: 25732556620441058124
+    link: 
+      link-column: Link to Custom Target
+      target: 
+        url: 'f?p=&APP_ID.:25:&APP_SESSION.::&DEBUG.:RP:P25_SIFRA,P25_JMBG_NASTAVNIKA:\#SIFRA#\,\#JMBG_NASTAVNIKA#\'
+        page: 25 # Forma za unos prijave
+        clear-cache: RP
+        values: 
+          p25_sifra: '#SIFRA#'
+          p25_jmbg_nastavnika: '#JMBG_NASTAVNIKA#'
+
+      link-icon: <span role="img" aria-label="Edit" class="fa fa-edit" title="Edit"></span>
+
+    pagination: 
+      type: Row Ranges X to Y
+      display-position: Bottom - Right
+
+    performance: 
+      lazy-loading: false
+
+    messages: 
+      when-no-data-found: No data found.
+      when-more-data-found: 'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+
+    search-bar: 
+      include-search-bar: true
+      search-field: true
+      finder-drop-down: true
+      reports-select-list: true
+      rows-per-page-selector: false
+
+    actions-menu: 
+      include-actions-menu: true
+      filter: true
+      select-columns: true
+      rows-per-page: true
+      sort: true
+      control-break: true
+      highlight: true
+      compute: true
+      aggregate: true
+      chart: true
+      group-by: true
+      pivot: true
+      flashback: true
+      save-report: true
+      save-public-report: false
+      reset: true
+      help: true
+      download: true
+      subscription: true
+
+    download: 
+      formats: 
+      - CSV
+      - HTML
+      - Excel
+      - PDF
+      send-as-email: true
+
+    heading: 
+      fixed-to: Page
+
+    icon-view: 
+      show: false
+
+    detail-view: 
+      show: false
+
+    saved-reports: 
+    - # ====== Saved Report: Primary Report ========================
+      id: 25732566739573059011
+      identification: 
+        name: Primary Report
+        alias: 257325668
+
+    columns: 
+    - # ====== Column: SIFRA =======================================
+      id: 25732557630856058126
+      identification: 
+        column-name: SIFRA
+        type: Hidden
+
+      heading: 
+        heading: Sifra
+
+      layout: 
+        sequence: 0
+
+      source: 
+        primary-key: true
+
+      security: 
+        escape-special-characters: true
+
+    - # ====== Column: DATUM_PRIJAVE ===============================
+      id: 25732558021983058127
+      identification: 
+        column-name: DATUM_PRIJAVE
+        type: Plain Text
+
+      heading: 
+        heading: Datum Prijave
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 2
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+        date-ranges: All
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+      security: 
+        escape-special-characters: true
+
+    - # ====== Column: VREME_PRIJAVE ===============================
+      id: 25732558408534058127
+      identification: 
+        column-name: VREME_PRIJAVE
+        type: Plain Text
+
+      heading: 
+        heading: Vreme Prijave
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 3
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+      security: 
+        escape-special-characters: true
+
+    - # ====== Column: BROJ_PRIJAVA ================================
+      id: 25732558812285058127
+      identification: 
+        column-name: BROJ_PRIJAVA
+        type: Plain Text
+
+      heading: 
+        heading: Broj Prijava
+        alignment: end
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 4
+        column-alignment: end
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+      security: 
+        escape-special-characters: true
+
+    - # ====== Column: NAPOMENA ====================================
+      id: 25732559273802058127
+      identification: 
+        column-name: NAPOMENA
+        type: Plain Text
+
+      heading: 
+        heading: Napomena
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 5
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+      security: 
+        escape-special-characters: true
+
+    - # ====== Column: JMBG_NASTAVNIKA =============================
+      id: 25732559657572058128
+      identification: 
+        column-name: JMBG_NASTAVNIKA
+        type: Plain Text (based on List of Values)
+
+      list-of-values: 
+        list-of-values: NASTAVNICI.IME # 25732556768184058124
+
+      heading: 
+        heading: Jmbg Nastavnika
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 0
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: true
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+    - # ====== Column: ID_SEMINARA =================================
+      id: 25732560018830058128
+      identification: 
+        column-name: ID_SEMINARA
+        type: Plain Text (based on List of Values)
+
+      list-of-values: 
+        list-of-values: SEMINARI.LOKACIJA # 25446102053565188733
+
+      heading: 
+        heading: Id Seminara
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 7
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+    - # ====== Column: NASTAVNICI_IME_PREZIME ======================
+      id: 25732560436751058128
+      identification: 
+        column-name: NASTAVNICI_IME_PREZIME
+        type: Plain Text
+
+      heading: 
+        heading: Nastavnici Ime Prezime
+        alignment: start
+
+      single-row-view: 
+        use-column-heading: true
+
+      layout: 
+        sequence: 8
+        column-alignment: start
+
+      accessibility: 
+        value-identifies-row: false
+
+      source: 
+        primary-key: false
+
+      column-filter: 
+        type: Default Based on Column Type
+
+      enable-users-to: 
+        hide: true
+        sort: true
+        filter: true
+        highlight: true
+        control-break: true
+        aggregate: true
+        compute: true
+        chart: true
+        group-by: true
+        pivot: true
+
+      security: 
+        escape-special-characters: true
+
+    printing: 
+      output: 
+        layout: Default Report Layout
+        view-file-as: Attachment
+
+      page: 
+        size: Letter
+        orientation: Landscape
+        units: Inches
+        width: 11
+        height: 8.5
+        border-width: 0.5
+        border-color: '#666666'
+
+      page-header: 
+        font: Helvetica
+        font-weight: Normal
+        font-size: 12
+        font-color: '#000000'
+        alignment: center
+        page-header-text: UNOS PRIJAVA
+
+      column-headings: 
+        font: Helvetica
+        font-weight: Bold
+        font-size: 10
+        font-color: '#000000'
+        background-color: '#EEEEEE'
+
+      columns: 
+        font: Helvetica
+        font-weight: Normal
+        font-size: 10
+        font-color: '#000000'
+        background-color: '#FFFFFF'
+
+      page-footer: 
+        font: Helvetica
+        font-weight: Normal
+        font-size: 12
+        font-color: '#000000'
+        alignment: center
+
+- # ====== Region: Breadcrumb ==================================
+  id: 25732562599745058130
+  identification: 
+    name: Breadcrumb
+    type: Breadcrumb
+
+  source: 
+    breadcrumb: Breadcrumb # 25413208948622834329
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Title Bar
+    template-options: 
+    - '#DEFAULT#'
+    - t-BreadcrumbRegion--useBreadcrumbTitle
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    appearance: 
+      breadcrumb-template: Breadcrumb
+      template-options: 
+      - '#DEFAULT#'
+
+buttons: 
+- # ====== Button: CREATE ======================================
+  id: 25732560961404058129
+  identification: 
+    button-name: CREATE
+    label: Create
+
+  layout: 
+    sequence: 10
+    region: UNOS PRIJAVA # 25732556510004058124
+    slot: RIGHT_OF_IR_SEARCH_BAR
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    button-template: Text
+    hot: true
+    template-options: 
+    - '#DEFAULT#'
+
+  behavior: 
+    action: Redirect to Page in this Application
+    target: 
+      url: 'f?p=&APP_ID.:25:&APP_SESSION.::&DEBUG.:25::'
+      page: 25 # Forma za unos prijave
+      clear-cache: 25
+
+    warn-on-unsaved-changes: Do Not Check
+
+dynamic-actions: 
+- # ====== Dynamic Action: Edit Report - Dialog Closed =========
+  id: 25732561283988058129
+  identification: 
+    name: Edit Report - Dialog Closed
+
+  execution: 
+    sequence: 10
+    event-scope: Static
+    type: Immediate
+
+  when: 
+    event: Dialog Closed
+    selection-type: Region
+    region: UNOS PRIJAVA # 25732556510004058124
+
+  actions: 
+  - # ====== Action: Refresh =====================================
+    id: 25732561712678058129
+    identification: 
+      action: Refresh
+
+    affected-elements: 
+      selection-type: Region
+      region: UNOS PRIJAVA # 25732556510004058124
+
+    execution: 
+      sequence: 10
+      event: Edit Report - Dialog Closed # 25732561283988058129
+      fire-when-event-result-is: True
+      fire-on-initialization: false
+

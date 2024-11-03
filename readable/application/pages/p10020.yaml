@@ -1,0 +1,249 @@
+---
+# ====== Page: About =========================================
+id: 10020
+identification: 
+  name: About
+  alias: ABOUT
+  title: About
+  page-group: Administration # 25413503343691834550
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: First item on page
+  warn-on-unsaved-changes: false
+
+css: 
+  inline: |
+    body{
+     background-image: url('#APP_FILES#poz.jpg') !important;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+    }
+    .container{
+     width: 60%;
+     height: 60%;
+    }
+    .footer{
+        width: auto;
+        height: 30%;
+    }
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+help: 
+  help-text: All application help text can be accessed from this page. The links in the "Documentation" region give a much more in-depth explanation of the application's features and functionality.
+
+configuration: 
+  build-option: 'Feature: About Page' # 25413501985668834548
+
+regions: 
+- # ====== Region: About Page ==================================
+  id: 25413549421369834600
+  identification: 
+    name: About Page
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>About Us</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #080707;
+                  color: #ffffff;
+              }
+              .container {
+                  max-width: 800px;
+                  margin: 0 auto;
+                  padding: 20px;
+              }
+              .heading {
+                  color: #009933;
+                  font-size: 24px;
+                  font-weight: bold;
+              }
+              .content {
+                  font-size: 16px;
+                  line-height: 1.6;
+                  margin-top: 20px;
+              }
+              .content p {
+                  margin-bottom: 20px;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <p class="heading">Dobrodošli na About Page stranicu!</p>
+              <div class="content">
+                  <p>Dobrodošli na aplikaciju za upravljanje seminarima koju je razvila Osnovna škola "Đura Jakšić" iz Konareva. Ova aplikacija je dizajnirana da olakša pristup i upravljanje evidencijom seminara koje organizujemo, s ciljem unapređenja stručnog usavršavanja naših nastavnika.</p>
+                              
+                  <p>Naša aplikacija je osmišljena da bude korisna i praktična, pružajući sve potrebne informacije na dohvat ruke i time omogućavajući bolju organizaciju i praćenje stručnog usavršavanja. Cilj nam je da podržimo razvoj i profesionalni rast naših nastavnika, kao i da unapredimo kvalitet obrazovanja kroz efikasno upravljanje seminarima i obukama.</p>
+                  
+                  <p>Hvala što koristite našu aplikaciju. Ako imate bilo kakvih pitanja ili sugestija, slobodno nas kontaktirajte.</p>
+                  
+                  <p><strong>Osnovna škola "Đura Jakšić", Konarevo</strong></p>
+              </div>
+          </div>
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 20
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Content Block
+    template-options: 
+    - '#DEFAULT#'
+    - t-ContentBlock--padded
+    - t-ContentBlock--h2
+    - t-ContentBlock--lightBG
+    - t-Region--removeHeader js-removeLandmark
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25449271861487303148
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .footer {
+          background-color: #080707; /* Dodajte # da bi boja bila ispravno prikazana */
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+          padding: 10px; /* Smanjuje visinu footera smanjenjem padding-a */
+          text-align: center;
+          font-size: 14px;
+          color: #ffffff; /* Dodajte # da bi boja bila ispravno prikazana */
+        }
+        .footer h3 {
+          margin: 0;
+          font-size: 16px; /* Smanjuje veličinu fonta za naslov */
+          color: #009933;
+        }
+        .footer p {
+          margin: 3px 0; /* Smanjuje marginu između paragrafa */
+        }
+        .footer .contact-info {
+          margin-top: 5px; /* Smanjuje marginu između kontakt informacija */
+        }
+      </style>
+      </head>
+      <body>
+      
+      <footer class="footer">
+        <h3>OŠ "Đura Jakšić", Konarevo</h3>
+        <p>Adresa: Ibarska 248, Konarevo 36340</p>
+        <p>Radno vreme: 07:00 - 18:00</p>
+        <p>Telefon: 036 821992</p>
+      </footer>
+      
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_05
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noUI
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+

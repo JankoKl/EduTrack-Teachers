@@ -1,0 +1,312 @@
+---
+# ====== Page: LOKACIJA ======================================
+id: 27
+identification: 
+  name: LOKACIJA
+  alias: LOKACIJA
+  title: LOKACIJA
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+css: 
+  inline: |
+    body{
+     background-image: url('#APP_FILES#poz.jpg') !important;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+    
+    }
+    .footer{
+        width: auto;
+        height: 30%;
+    }
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: mapa ========================================
+  id: 25455964900419520728
+  identification: 
+    name: mapa
+    type: Static Content
+
+  source: 
+    html-code: '<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1X8WIYg5jDBHjRQSoA0Pg-zYotsxZeQU&ehbc=2E312F" width="700" height="480"></iframe>'
+
+  layout: 
+    sequence: 20
+    parent-region: New # 25455965102749520730
+    slot: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: None
+    render-components: Above Content
+
+  advanced: 
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25455965080585520729
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .footer {
+          background-color: #080707; /* Dodajte # da bi boja bila ispravno prikazana */
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+          padding: 10px; /* Smanjuje visinu footera smanjenjem padding-a */
+          text-align: center;
+          font-size: 14px;
+          color: #ffffff; /* Dodajte # da bi boja bila ispravno prikazana */
+        }
+        .footer h3 {
+          margin: 0;
+          font-size: 16px; /* Smanjuje veličinu fonta za naslov */
+          color: #009933;
+        }
+        .footer p {
+          margin: 3px 0; /* Smanjuje marginu između paragrafa */
+        }
+        .footer .contact-info {
+          margin-top: 5px; /* Smanjuje marginu između kontakt informacija */
+        }
+      </style>
+      </head>
+      <body>
+      
+      <footer class="footer">
+        <h3>OŠ "Đura Jakšić", Konarevo</h3>
+        <p>Adresa: Ibarska 248, Konarevo 36340</p>
+        <p>Radno vreme: 07:00 - 18:00</p>
+        <p>Telefon: 036 821992</p>
+      </footer>
+      
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_05
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noUI
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25455965102749520730
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Lokacija Osnovne Škole Đura Jakšić</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #080707;
+                  color: #ffffff;
+              }
+              .container {
+                  max-width: 800px;
+                  margin: 0 auto;
+                  padding: 20px;
+              }
+              .heading {
+                  color: #009933;
+                  font-size: 24px;
+                  font-weight: bold;
+              }
+              .content {
+                  font-size: 16px;
+                  line-height: 1.6;
+                  margin-top: 20px;
+              }
+              .content p {
+                  margin-bottom: 20px;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <p class="heading">Lokacija Osnovne Škole "Đura Jakšić"</p>
+              <div class="content">
+                  <p>Osnovna škola "Đura Jakšić" se nalazi u naselju Konarevo, koje je deo opštine Kraljevo u Raškom okrugu. Konarevo je poznato po svojoj mirnoj atmosferi i prijateljskoj zajednici.</p>
+                  
+                  <p>Škola je smeštena u središtu naselja, što omogućava lak pristup kako učenicima, tako i roditeljima. Ova lokacija pruža sigurnu i podržavajuću sredinu za decu, kao i prikladne uslove za obrazovanje i rast.</p>
+                  
+                  <p>Osnovna škola "Đura Jakšić" je prepoznatljiva po svojoj posvećenosti obrazovanju i angažovanju u lokalnoj zajednici, čime doprinosi razvoju i unapređenju obrazovnog sistema u Konarevu.</p>
+              </div>
+          </div>
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 20
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: Breadcrumb ==================================
+  id: 25746594690763294604
+  identification: 
+    name: Breadcrumb
+    type: Breadcrumb
+
+  source: 
+    breadcrumb: Breadcrumb # 25413208948622834329
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Title Bar
+    template-options: 
+    - '#DEFAULT#'
+    - t-BreadcrumbRegion--useBreadcrumbTitle
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    appearance: 
+      breadcrumb-template: Breadcrumb
+      template-options: 
+      - '#DEFAULT#'
+

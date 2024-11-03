@@ -1,0 +1,136 @@
+---
+- # ====== Static Application File: background.jpg =============
+  id: 25413088443867586216
+  identification: 
+    file-name: background.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-32.png ======
+  id: 25413499821867834545
+  identification: 
+    file-name: icons/app-icon-32.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-144-rounded.p
+  id: 25413500120434834545
+  identification: 
+    file-name: icons/app-icon-144-rounded.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-192.png =====
+  id: 25413500459000834545
+  identification: 
+    file-name: icons/app-icon-192.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-256-rounded.p
+  id: 25413500765443834546
+  identification: 
+    file-name: icons/app-icon-256-rounded.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-512.png =====
+  id: 25413501075554834546
+  identification: 
+    file-name: icons/app-icon-512.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: poz.jpg ====================
+  id: 25415656823351902183
+  identification: 
+    file-name: poz.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: dura.jpg ===================
+  id: 25764966109938816552
+  identification: 
+    file-name: dura.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: škola.JPG ==================
+  id: 25765477512452818116
+  identification: 
+    file-name: škola.JPG
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: strucno-usavrsavanje.jpg ===
+  id: 25765481153659819356
+  identification: 
+    file-name: strucno-usavrsavanje.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: skola-DJura-Jaksic-5-750x430
+  id: 25765502994427821561
+  identification: 
+    file-name: skola-DJura-Jaksic-5-750x430.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: Djura_soldatovic.jpg =======
+  id: 25766326663931860950
+  identification: 
+    file-name: Djura_soldatovic.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: V.VelickovicNovember16.083-1
+  id: 25766333213907862394
+  identification: 
+    file-name: V.VelickovicNovember16.083-1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: Dura_Jaksic.jpg ============
+  id: 25767585309440932427
+  identification: 
+    file-name: Dura_Jaksic.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: delfi_izabrana_dela__djura_j
+  id: 25769659098352253855
+  identification: 
+    file-name: delfi_izabrana_dela__djura_jaksic.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+

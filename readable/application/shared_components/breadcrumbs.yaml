@@ -1,0 +1,245 @@
+---
+- # ====== Breadcrumb: Breadcrumb ==============================
+  id: 25413208948622834329
+  identification: 
+    name: Breadcrumb
+
+  entries: 
+  - # ====== Entry: Home =========================================
+    id: 25413209112496834329
+    identification: 
+      name: Home
+      page-number: 1
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # Home
+
+  - # ====== Entry: Administration ===============================
+    id: 25413555339764834605
+    identification: 
+      name: Administration
+      page-number: 10000
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10000:&APP_SESSION.::&DEBUG.:::'
+        page: 10000 # Administration
+
+  - # ====== Entry: NASTAVNICI ===================================
+    id: 25414830123053883210
+    identification: 
+      name: NASTAVNICI
+      page-number: 2
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
+        page: 2 # NASTAVNICI
+
+  - # ====== Entry: STRUKE =======================================
+    id: 25436810864792012435
+    identification: 
+      name: STRUKE
+      page-number: 4
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+        page: 4 # STRUKE
+
+  - # ====== Entry: TIP SEMINARA =================================
+    id: 25441129613545134760
+    identification: 
+      name: TIP SEMINARA
+      page-number: 6
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:6:&APP_SESSION.::&DEBUG.:::'
+        page: 6 # TIP SEMINARA
+
+  - # ====== Entry: SEMINARI =====================================
+    id: 25442372500605401145
+    identification: 
+      name: SEMINARI
+      page-number: 8
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:8:&APP_SESSION.::&DEBUG.:::'
+        page: 8 # SEMINARI
+
+  - # ====== Entry: PREDAVACI ====================================
+    id: 25443671253835157872
+    identification: 
+      name: PREDAVACI
+      page-number: 10
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+        page: 10 # PREDAVACI
+
+  - # ====== Entry: UPLATE =======================================
+    id: 25448361180361260547
+    identification: 
+      name: UPLATE
+      page-number: 15
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:15:&APP_SESSION.::&DEBUG.:::'
+        page: 15 # UPLATE
+
+  - # ====== Entry: DENORMALIZACIJA 2NF ==========================
+    id: 25449217217671295559
+    identification: 
+      name: DENORMALIZACIJA 2NF
+      page-number: 17
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:17:&APP_SESSION.::&DEBUG.:::'
+        page: 17 # DENORMALIZACIJA 2NF
+
+  - # ====== Entry: DENORMALIZACIJA 3NF ==========================
+    id: 25450497674597325114
+    identification: 
+      name: DENORMALIZACIJA 3NF
+      page-number: 18
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:18:&APP_SESSION.::&DEBUG.:::'
+        page: 18 # DENORMALIZACIJA 3NF
+
+  - # ====== Entry: GRAFIKON =====================================
+    id: 25454977391869707970
+    identification: 
+      name: GRAFIKON
+      page-number: 21
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:21:&APP_SESSION.::&DEBUG.:::'
+        page: 21 # GRAFIKON
+
+  - # ====== Entry: UNOS PRIJAVA =================================
+    id: 25732562473188058130
+    identification: 
+      name: UNOS PRIJAVA
+      page-number: 24
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:24:&APP_SESSION.::&DEBUG.:::'
+        page: 24 # UNOS PRIJAVA
+
+  - # ====== Entry: KALENDAR SEMINARA ============================
+    id: 25733207296548843672
+    identification: 
+      name: KALENDAR SEMINARA
+      page-number: 26
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:26:&APP_SESSION.::&DEBUG.:::'
+        page: 26 # KALENDAR SEMINARA
+
+  - # ====== Entry: LOKACIJA =====================================
+    id: 25746595121253294604
+    identification: 
+      name: LOKACIJA
+      page-number: 27
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:27:&APP_SESSION.::&DEBUG.:::'
+        page: 27 # LOKACIJA
+
+  - # ====== Entry: PRIJAVE ======================================
+    id: 25751898738771471829
+    identification: 
+      name: PRIJAVE
+      page-number: 11
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+        page: 11 # PRIJAVE
+
+  - # ====== Entry: PROCEDURA ====================================
+    id: 25753230515317505505
+    identification: 
+      name: PROCEDURA
+      page-number: 30
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:30:&APP_SESSION.::&DEBUG.:::'
+        page: 30 # PROCEDURA
+
+  - # ====== Entry: REGISTER PAGE ================================
+    id: 68294741070126836469
+    identification: 
+      name: REGISTER PAGE
+      page-number: 9998
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:9998:&APP_SESSION.::&DEBUG.:::'
+        page: 9998 # Registration Page
+

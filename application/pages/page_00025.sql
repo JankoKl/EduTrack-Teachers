@@ -1,0 +1,396 @@
+prompt --application/pages/page_00025
+begin
+--   Manifest
+--     PAGE: 00025
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>15799740000992848995
+,p_default_application_id=>18237
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_OBUKA'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>25
+,p_name=>'Forma za unos prijave'
+,p_alias=>'FORMA-ZA-UNOS-PRIJAVE'
+,p_page_mode=>'MODAL'
+,p_step_title=>'Forma za unos prijave'
+,p_autocomplete_on_off=>'OFF'
+,p_step_template=>wwv_flow_imp.id(25413230339773834340)
+,p_page_template_options=>'#DEFAULT#'
+,p_dialog_chained=>'N'
+,p_protection_level=>'C'
+,p_page_component_map=>'02'
+,p_created_on=>wwv_flow_imp.dz('20240815104317Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_last_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(25732545890511058116)
+,p_plug_name=>'Forma za unos prijave'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(25413245680641834349)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'PRIJAVE'
+,p_include_rowid_column=>false
+,p_is_editable=>true
+,p_edit_operations=>'i:u:d'
+,p_lost_update_check_type=>'VALUES'
+,p_plug_source_type=>'NATIVE_FORM'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(25732551731966058121)
+,p_plug_name=>'Buttons'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(25413248405838834351)
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'REGION_POSITION_03'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'TEXT',
+  'show_line_breaks', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(25732552125742058121)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(25732551731966058121)
+,p_button_name=>'CANCEL'
+,p_button_action=>'DEFINED_BY_DA'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(25413385968713834413)
+,p_button_image_alt=>'Cancel'
+,p_button_position=>'CLOSE'
+,p_warn_on_unsaved_changes=>null
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(25732553572208058122)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_imp.id(25732551731966058121)
+,p_button_name=>'DELETE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(25413385968713834413)
+,p_button_image_alt=>'Delete'
+,p_button_position=>'DELETE'
+,p_button_execute_validations=>'N'
+,p_confirm_message=>'&APP_TEXT$DELETE_MSG!RAW.'
+,p_confirm_style=>'danger'
+,p_button_condition=>'P25_SIFRA'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'DELETE'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(25732553911484058122)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_imp.id(25732551731966058121)
+,p_button_name=>'SAVE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(25413385968713834413)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Apply Changes'
+,p_button_position=>'NEXT'
+,p_button_condition=>'P25_SIFRA'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'UPDATE'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(25732554375351058122)
+,p_button_sequence=>40
+,p_button_plug_id=>wwv_flow_imp.id(25732551731966058121)
+,p_button_name=>'CREATE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(25413385968713834413)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_position=>'NEXT'
+,p_button_condition=>'P25_SIFRA'
+,p_button_condition_type=>'ITEM_IS_NULL'
+,p_database_action=>'INSERT'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732546158412058117)
+,p_name=>'P25_SIFRA'
+,p_source_data_type=>'VARCHAR2'
+,p_is_primary_key=>true
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_source=>'SIFRA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_protection_level=>'S'
+,p_attribute_01=>'Y'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110128Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732546590256058117)
+,p_name=>'P25_JMBG_NASTAVNIKA'
+,p_source_data_type=>'NUMBER'
+,p_is_primary_key=>true
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_source=>'JMBG_NASTAVNIKA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_protection_level=>'S'
+,p_attribute_01=>'Y'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110128Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732546959562058117)
+,p_name=>'P25_DATUM_PRIJAVE'
+,p_source_data_type=>'DATE'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_prompt=>'Datum Prijave'
+,p_source=>'DATUM_PRIJAVE'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_DATE_PICKER_APEX'
+,p_cSize=>32
+,p_cMaxlength=>255
+,p_field_template=>wwv_flow_imp.id(25413383486666834412)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'POPUP'
+,p_attribute_03=>'NONE'
+,p_attribute_06=>'NONE'
+,p_attribute_09=>'N'
+,p_attribute_11=>'Y'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110128Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732547359662058118)
+,p_name=>'P25_VREME_PRIJAVE'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_prompt=>'Vreme Prijave'
+,p_source=>'VREME_PRIJAVE'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>6
+,p_field_template=>wwv_flow_imp.id(25413383486666834412)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732547730199058118)
+,p_name=>'P25_BROJ_PRIJAVA'
+,p_source_data_type=>'NUMBER'
+,p_is_required=>true
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_prompt=>'Broj Prijava'
+,p_source=>'BROJ_PRIJAVA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_NUMBER_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>255
+,p_field_template=>wwv_flow_imp.id(25413384744582834412)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_03=>'left'
+,p_attribute_04=>'decimal'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732548140152058118)
+,p_name=>'P25_NAPOMENA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>60
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_prompt=>'Napomena'
+,p_source=>'NAPOMENA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>80
+,p_field_template=>wwv_flow_imp.id(25413383486666834412)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'NONE'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732548577877058119)
+,p_name=>'P25_ID_SEMINARA'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_source=>'ID_SEMINARA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(25732548921609058119)
+,p_name=>'P25_NASTAVNICI_IME_PREZIME'
+,p_source_data_type=>'VARCHAR2'
+,p_is_required=>true
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_item_source_plug_id=>wwv_flow_imp.id(25732545890511058116)
+,p_prompt=>'Nastavnik'
+,p_source=>'NASTAVNICI_IME_PREZIME'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_SELECT_LIST'
+,p_named_lov=>'NASTAVNICI.IME.PREZIME'
+,p_lov_display_null=>'YES'
+,p_cHeight=>1
+,p_field_template=>wwv_flow_imp.id(25413384744582834412)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'NONE'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815110129Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(25732552210825058121)
+,p_name=>'Cancel Dialog'
+,p_event_sequence=>10
+,p_triggering_element_type=>'BUTTON'
+,p_triggering_button_id=>wwv_flow_imp.id(25732552125742058121)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'click'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(25732553077160058122)
+,p_event_id=>wwv_flow_imp.id(25732552210825058121)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_DIALOG_CANCEL'
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(25732555191603058123)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_region_id=>wwv_flow_imp.id(25732545890511058116)
+,p_process_type=>'NATIVE_FORM_DML'
+,p_process_name=>'Process form Forma za unos prijave'
+,p_attribute_01=>'REGION_SOURCE'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'Y'
+,p_attribute_08=>'Y'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>25732555191603058123
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(25732555532820058123)
+,p_process_sequence=>50
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_CLOSE_WINDOW'
+,p_process_name=>'Close Dialog'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when=>'CREATE,SAVE,DELETE'
+,p_process_when_type=>'REQUEST_IN_CONDITION'
+,p_internal_uid=>25732555532820058123
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(25732554736629058123)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_region_id=>wwv_flow_imp.id(25732545890511058116)
+,p_process_type=>'NATIVE_FORM_INIT'
+,p_process_name=>'Initialize form Forma za unos prijave'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>25732554736629058123
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/

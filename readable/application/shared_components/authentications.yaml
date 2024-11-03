@@ -1,0 +1,43 @@
+---
+- # ====== Authentication: Oracle APEX Accounts ================
+  id: 25413208645516834329
+  identification: 
+    name: Oracle APEX Accounts
+
+  subscription: 
+    version-number: 15553830093456
+
+  settings: 
+    type: Oracle APEX Accounts
+
+  session-not-valid: 
+    redirect-to: Login Page
+
+  login-processing: 
+    switch-in-session: false
+
+  real-application-security: 
+    ras-mode: Disabled
+
+- # ====== Authentication: PotvrdaIdentiteta ===================
+  id: 68363424761964103536
+  identification: 
+    name: PotvrdaIdentiteta
+
+  subscription: 
+    version-number: 15586919750364
+
+  settings: 
+    type: Custom
+    authentication-function-name: USER_REG_AUTH
+    enable-legacy-authentication-attributes: false
+
+  session-not-valid: 
+    redirect-to: Login Page
+
+  login-processing: 
+    switch-in-session: false
+
+  real-application-security: 
+    ras-mode: Disabled
+

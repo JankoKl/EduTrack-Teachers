@@ -1,0 +1,46 @@
+---
+- # ====== Build Option: Commented Out =========================
+  id: 25413208392922834329
+  identification: 
+    name: Commented Out
+
+  status: 
+    status: Exclude
+    default-on-export: Same as Current Status
+    on-upgrade-keep-status: false
+
+  subscription: 
+    version-number: 15553830093453
+
+- # ====== Build Option: Feature: Feedback =====================
+  id: 25413501494931834548
+  identification: 
+    name: 'Feature: Feedback'
+
+  status: 
+    status: Include
+    default-on-export: Same as Current Status
+    on-upgrade-keep-status: false
+
+  comments: 
+    comments: Provide a mechanism for end users to post general comments back to the application administrators and developers.
+
+  subscription: 
+    version-number: 15553830095824
+
+- # ====== Build Option: Feature: About Page ===================
+  id: 25413501985668834548
+  identification: 
+    name: 'Feature: About Page'
+
+  status: 
+    status: Include
+    default-on-export: Same as Current Status
+    on-upgrade-keep-status: false
+
+  comments: 
+    comments: About this application page.
+
+  subscription: 
+    version-number: 15553830095828
+

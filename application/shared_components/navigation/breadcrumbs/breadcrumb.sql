@@ -1,0 +1,194 @@
+prompt --application/shared_components/navigation/breadcrumbs/breadcrumb
+begin
+--   Manifest
+--     MENU: Breadcrumb
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>15799740000992848995
+,p_default_application_id=>18237
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_OBUKA'
+);
+wwv_flow_imp_shared.create_menu(
+ p_id=>wwv_flow_imp.id(25413208948622834329)
+,p_name=>'Breadcrumb'
+,p_created_on=>wwv_flow_imp.dz('20240814115240Z')
+,p_updated_on=>wwv_flow_imp.dz('20241102145412Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25413209112496834329)
+,p_short_name=>'Home'
+,p_link=>'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>1
+,p_created_on=>wwv_flow_imp.dz('20240814115240Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115240Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25413555339764834605)
+,p_short_name=>'Administration'
+,p_link=>'f?p=&APP_ID.:10000:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>10000
+,p_created_on=>wwv_flow_imp.dz('20240814115243Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115243Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25414830123053883210)
+,p_short_name=>'NASTAVNICI'
+,p_link=>'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>2
+,p_created_on=>wwv_flow_imp.dz('20240814120049Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814120049Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25436810864792012435)
+,p_short_name=>'STRUKE'
+,p_link=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>4
+,p_created_on=>wwv_flow_imp.dz('20240814130507Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814130507Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25441129613545134760)
+,p_short_name=>'TIP SEMINARA'
+,p_link=>'f?p=&APP_ID.:6:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>6
+,p_created_on=>wwv_flow_imp.dz('20240814132530Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814132530Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25442372500605401145)
+,p_short_name=>'SEMINARI'
+,p_link=>'f?p=&APP_ID.:8:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>8
+,p_created_on=>wwv_flow_imp.dz('20240814132708Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814132708Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25443671253835157872)
+,p_short_name=>'PREDAVACI'
+,p_link=>'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>10
+,p_created_on=>wwv_flow_imp.dz('20240814132921Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814132921Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25448361180361260547)
+,p_short_name=>'UPLATE'
+,p_link=>'f?p=&APP_ID.:15:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>15
+,p_created_on=>wwv_flow_imp.dz('20240814134628Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814134628Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25449217217671295559)
+,p_short_name=>'DENORMALIZACIJA 2NF'
+,p_link=>'f?p=&APP_ID.:17:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>17
+,p_created_on=>wwv_flow_imp.dz('20240814135218Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814135218Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25450497674597325114)
+,p_short_name=>'DENORMALIZACIJA 3NF'
+,p_link=>'f?p=&APP_ID.:18:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>18
+,p_created_on=>wwv_flow_imp.dz('20240814135713Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814135713Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25454977391869707970)
+,p_short_name=>'GRAFIKON'
+,p_link=>'f?p=&APP_ID.:21:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>21
+,p_created_on=>wwv_flow_imp.dz('20240814141816Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814141816Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25732562473188058130)
+,p_short_name=>'UNOS PRIJAVA'
+,p_link=>'f?p=&APP_ID.:24:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>24
+,p_created_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815104318Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25733207296548843672)
+,p_short_name=>'KALENDAR SEMINARA'
+,p_link=>'f?p=&APP_ID.:26:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>26
+,p_created_on=>wwv_flow_imp.dz('20240815105019Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815105019Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25746595121253294604)
+,p_short_name=>'LOKACIJA'
+,p_link=>'f?p=&APP_ID.:27:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>27
+,p_created_on=>wwv_flow_imp.dz('20240815120528Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815120528Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25751898738771471829)
+,p_short_name=>'PRIJAVE'
+,p_link=>'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>11
+,p_created_on=>wwv_flow_imp.dz('20240815123500Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815123500Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(25753230515317505505)
+,p_short_name=>'PROCEDURA'
+,p_link=>'f?p=&APP_ID.:30:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>30
+,p_created_on=>wwv_flow_imp.dz('20240815124037Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815124037Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(68294741070126836469)
+,p_short_name=>'REGISTER PAGE'
+,p_link=>'f?p=&APP_ID.:9998:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>9998
+,p_created_on=>wwv_flow_imp.dz('20241102145412Z')
+,p_updated_on=>wwv_flow_imp.dz('20241102145412Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/

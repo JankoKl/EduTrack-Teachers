@@ -1,0 +1,674 @@
+---
+# ====== Page: Home ==========================================
+id: 1
+identification: 
+  name: Home
+  alias: HOME
+  title: OŠ ĐURA JAKŠIĆ
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+css: 
+  inline: |
+    body{
+     background-image: url('#APP_FILES#poz.jpg') !important;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+    }
+    .container{
+     width: 60%;
+     height: 60%;
+    }
+    .footer{
+        width: auto;
+        height: 30%;
+    }
+
+html-header: 
+  page-html-body-attribute: |
+    
+    
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: OŠ ĐURA JAKŠIĆ ==============================
+  id: 25413510903310834560
+  identification: 
+    name: OŠ ĐURA JAKŠIĆ
+    type: Static Content
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Hero
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  image: 
+    file-url: '#APP_FILES#icons/app-icon-512.png'
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25415681178293904911
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .footer {
+          background-color: #080707; /* Dodajte # da bi boja bila ispravno prikazana */
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+          padding: 10px; /* Smanjuje visinu footera smanjenjem padding-a */
+          text-align: center;
+          font-size: 14px;
+          color: #ffffff; /* Dodajte # da bi boja bila ispravno prikazana */
+        }
+        .footer h3 {
+          margin: 0;
+          font-size: 16px; /* Smanjuje veličinu fonta za naslov */
+          color: #009933;
+        }
+        .footer p {
+          margin: 3px 0; /* Smanjuje marginu između paragrafa */
+        }
+        .footer .contact-info {
+          margin-top: 5px; /* Smanjuje marginu između kontakt informacija */
+        }
+      </style>
+      </head>
+      <body>
+      
+      <footer class="footer">
+        <h3>OŠ "Đura Jakšić", Konarevo</h3>
+        <p>Adresa: Ibarska 248, Konarevo 36340</p>
+        <p>Radno vreme: 07:00 - 18:00</p>
+        <p>Telefon: 036 821992</p>
+      </footer>
+      
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 50
+    parent-region: No Parent
+    slot: REGION_POSITION_05
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noUI
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25455967098912520749
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Centrirani Dugmici</title>
+          <style>
+              .button-container {
+                  display: flex;
+                  justify-content: center; /* Centriranje dugmadi horizontalno */
+                  align-items: center;     /* Centriranje dugmadi vertikalno (ako je potrebno) */
+                  gap: 15px;               /* Razmak između dugmadi */
+                  padding: 20px;           /* Padding oko kontejnera (ako je potrebno) */
+              }
+              .button-container button {
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  background-color: #009933;
+                  color: #ffffff;
+                  cursor: pointer;
+                  font-size: 16px;
+              }
+              .button-container button:hover {
+                  background-color: #007a2f;
+              }
+          </style>
+      </head>
+      </html>
+      
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noUI
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25756046866457868504
+  identification: 
+    name: New
+    type: Static Content
+
+  layout: 
+    sequence: 20
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Carousel Container
+    template-options: 
+    - '#DEFAULT#'
+    - js-cycle5s
+    - t-Region--removeHeader
+    - t-Region--hiddenOverflow
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25756047094196868506
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: <img src="#APP_FILES#delfi_izabrana_dela__djura_jaksic.jpg" width=100% position= centar> </img>
+
+  layout: 
+    sequence: 20
+    parent-region: New # 25756046866457868504
+    slot: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Carousel Container
+    template-options: 
+    - '#DEFAULT#'
+    - js-cycle5s
+    - t-Region--removeHeader
+    - t-Region--hiddenOverflow
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25756047171471868507
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: <img src="#APP_FILES#Djura_soldatovic.jpg" width=100% position= centar> </img>
+
+  layout: 
+    sequence: 30
+    parent-region: New # 25756046866457868504
+    slot: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - js-showMaximizeButton
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--noBorder
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25756047200842868508
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: <img src="#APP_FILES#Dura_Jaksic.jpg" width=100% position= centar> </img>
+
+  layout: 
+    sequence: 10
+    parent-region: New # 25756046866457868504
+    slot: SUB_REGIONS
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Carousel Container
+    template-options: 
+    - '#DEFAULT#'
+    - js-cycle5s
+    - t-Region--removeHeader
+    - t-Region--hiddenOverflow
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+- # ====== Region: New =========================================
+  id: 25756047377590868509
+  identification: 
+    name: New
+    type: Static Content
+
+  source: 
+    html-code: |
+      <!DOCTYPE html>
+      <html lang="sr">
+      <head>
+          <meta charset="UTF-8">
+          <title>Osnovna Škola Đura Jakšić - O Nama</title>
+          <style>
+              /* Container for the image */
+              .image-container {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  max-width: 1000px; /* Adjust to fit your layout */
+                  margin: 0 auto; /* Center the image container */
+              }
+      
+              /* Style for the image */
+              .image-container img {
+                  display: block;
+                  width: 100%; /* Make the image responsive */
+                  height: auto; /* Maintain aspect ratio */
+              }
+      
+              /* Container for the text content */
+              .text-container {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+                  color: white; /* White text color */
+                  padding: 20px; /* Padding for the text */
+                  box-sizing: border-box; /* Include padding in the width calculation */
+                  text-align: center; /* Center the text horizontally */
+              }
+      
+              /* Styling for the title */
+              .title {
+                  font-size: 1.5em; /* Adjust font size as needed */
+                  font-weight: bold;
+                  margin-bottom: 10px; /* Add some space after the title */
+              }
+          </style>
+      </head>
+      <body>
+          <div class="image-container">
+              <img src="#APP_FILES#dura.jpg" alt="Osnovna Škola Đura Jakšić">
+              <div class="text-container">
+                  <h2 class="title">O Školi "Đura Jakšić"</h2>
+                  <p>Osnovna škola "Đura Jakšić" u Konarevu ima dugu i bogatu istoriju, koja seže unazad više od nekoliko decenija. Škola je posvećena pružanju kvalitetnog obrazovanja i oblikovanju budućnosti mladih ljudi. </p>
+                  <p>Škola nosi ime po poznatom pesniku i književniku Đuri Jakšiću, koji je svojim radom značajno doprineo kulturi i obrazovanju. U duhu njegovih vrednosti, nastojimo da našim učenicima pružimo obrazovanje koje ne samo da ih priprema za akademske izazove, već i za životne situacije.</p>
+                  <p>Škola "Đura Jakšić" je mesto gde se neguju vrednosti zajedništva i prijateljstva. Uveren je da obrazovanje ide ruku pod ruku sa socijalnim razvojem, te se trudimo da stvorimo okruženje u kojem će svi učenici moći da se osećaju cenjeni i podržani.</p>
+              </div>
+          </div>
+      </body>
+      </html>
+      
+
+  layout: 
+    sequence: 30
+    parent-region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Standard
+    template-options: 
+    - '#DEFAULT#'
+    - t-Region--noPadding
+    - t-Region--removeHeader js-removeLandmark
+    - t-Region--scrollBody
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+buttons: 
+- # ====== Button: New =========================================
+  id: 25455967160881520750
+  identification: 
+    button-name: New
+    label: PRIJAVE
+
+  layout: 
+    sequence: 10
+    region: New # 25455967098912520749
+    slot: BODY
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: false
+    template-options: 
+    - '#DEFAULT#'
+    - t-Button--stretch
+
+  behavior: 
+    action: Redirect to Page in this Application
+    target: 
+      url: 'f?p=&APP_ID.:24:&SESSION.::&DEBUG.:::'
+      page: 24 # UNOS PRIJAVA
+
+    warn-on-unsaved-changes: Do Not Check
+
+- # ====== Button: New_1 =======================================
+  id: 25756046581144868501
+  identification: 
+    button-name: New_1
+    label: KALENDAR
+
+  layout: 
+    sequence: 10
+    region: New # 25455967098912520749
+    slot: BODY
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: false
+    template-options: 
+    - '#DEFAULT#'
+    - t-Button--stretch
+
+  behavior: 
+    action: Redirect to Page in this Application
+    target: 
+      url: 'f?p=&APP_ID.:26:&SESSION.::&DEBUG.:26::'
+      page: 26 # KALENDAR SEMINARA
+      clear-cache: 26
+
+    warn-on-unsaved-changes: Do Not Check
+
+- # ====== Button: New_2 =======================================
+  id: 25756046635491868502
+  identification: 
+    button-name: New_2
+    label: UPLATE
+
+  layout: 
+    sequence: 10
+    region: New # 25455967098912520749
+    slot: BODY
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: false
+    template-options: 
+    - '#DEFAULT#'
+    - t-Button--stretch
+
+  behavior: 
+    action: Redirect to Page in this Application
+    target: 
+      url: 'f?p=&APP_ID.:15:&SESSION.::&DEBUG.:::'
+      page: 15 # UPLATE
+
+    warn-on-unsaved-changes: Do Not Check
+
+- # ====== Button: New_3 =======================================
+  id: 25756046733211868503
+  identification: 
+    button-name: New_3
+    label: GRAFIKON
+
+  layout: 
+    sequence: 10
+    region: New # 25455967098912520749
+    slot: BODY
+    start-new-layout: false
+    start-new-row: false
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: false
+    template-options: 
+    - '#DEFAULT#'
+    - t-Button--stretch
+
+  behavior: 
+    action: Redirect to Page in this Application
+    target: 
+      url: 'f?p=&APP_ID.:21:&SESSION.::&DEBUG.:::'
+      page: 21 # GRAFIKON
+
+    warn-on-unsaved-changes: Do Not Check
+

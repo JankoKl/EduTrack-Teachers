@@ -1,0 +1,116 @@
+prompt --application/shared_components/user_interface/theme_style
+begin
+--   Manifest
+--     THEME STYLE: 18237
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.5'
+,p_default_workspace_id=>15799740000992848995
+,p_default_application_id=>18237
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_OBUKA'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25413474933523834531)
+,p_theme_id=>42
+,p_name=>'Redwood Light'
+,p_css_file_urls=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'#APEX_FILES#libraries/oracle-fonts/oraclesans-apex#MIN#.css?v=#APEX_VERSION#',
+'#THEME_FILES#css/Redwood#MIN#.css?v=#APEX_VERSION#'))
+,p_is_current=>false
+,p_is_public=>true
+,p_is_accessible=>false
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Redwood-Theme.less'
+,p_theme_roller_output_file_url=>'#THEME_FILES#css/Redwood-Theme#MIN#.css?v=#APEX_VERSION#'
+,p_theme_roller_read_only=>true
+,p_reference_id=>2596426436825065489
+,p_created_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25413475141624834531)
+,p_theme_id=>42
+,p_name=>'Vita'
+,p_is_current=>false
+,p_is_public=>true
+,p_is_accessible=>true
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Vita.less'
+,p_theme_roller_output_file_url=>'#THEME_FILES#css/Vita#MIN#.css?v=#APEX_VERSION#'
+,p_theme_roller_read_only=>true
+,p_reference_id=>2719875314571594493
+,p_created_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25413475307409834532)
+,p_theme_id=>42
+,p_name=>'Vita - Dark'
+,p_is_current=>false
+,p_is_public=>true
+,p_is_accessible=>false
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Vita-Dark.less'
+,p_theme_roller_output_file_url=>'#THEME_FILES#css/Vita-Dark#MIN#.css?v=#APEX_VERSION#'
+,p_theme_roller_read_only=>true
+,p_reference_id=>3543348412015319650
+,p_created_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115652Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25413475586358834532)
+,p_theme_id=>42
+,p_name=>'Vita - Red'
+,p_is_current=>false
+,p_is_public=>true
+,p_is_accessible=>false
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Vita-Red.less'
+,p_theme_roller_output_file_url=>'#THEME_FILES#css/Vita-Red#MIN#.css?v=#APEX_VERSION#'
+,p_theme_roller_read_only=>true
+,p_reference_id=>1938457712423918173
+,p_created_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25413475769707834532)
+,p_theme_id=>42
+,p_name=>'Vita - Slate'
+,p_is_current=>false
+,p_is_public=>true
+,p_is_accessible=>false
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Vita-Slate.less'
+,p_theme_roller_output_file_url=>'#THEME_FILES#css/Vita-Slate#MIN#.css?v=#APEX_VERSION#'
+,p_theme_roller_read_only=>true
+,p_reference_id=>3291983347983194966
+,p_created_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_updated_on=>wwv_flow_imp.dz('20240814115242Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_theme_style(
+ p_id=>wwv_flow_imp.id(25414137714787602886)
+,p_theme_id=>42
+,p_name=>'Vita - Dark (copy_1)'
+,p_is_current=>true
+,p_is_public=>true
+,p_is_accessible=>false
+,p_theme_roller_input_file_urls=>'#THEME_FILES#less/theme/Vita-Dark.less'
+,p_theme_roller_config=>'{"classes":[],"vars":{"@l_Button-Hot-BG":"#070d13","@l_Button-Hot-Text":"#ffffff","@g_Header-BG":"#080707","@g_Header-FG":"#ffffff","@g_Button-BorderRadius":"14px","@g_Form-BorderRadius":"2px","@Nav-Exp":"140px","@Head-Height":"48px","@Side-Exp":"230'
+||'px","@g_Container-BorderRadius":"2px"},"customCSS":"","useCustomLess":"N"}'
+,p_theme_roller_output_file_url=>'#THEME_DB_FILES#25414137714787602886.css'
+,p_theme_roller_read_only=>false
+,p_created_on=>wwv_flow_imp.dz('20240814115651Z')
+,p_updated_on=>wwv_flow_imp.dz('20240815130156Z')
+,p_created_by=>'JANKOKLIKOVAC@GMAIL.COM'
+,p_updated_by=>'JANKOKLIKOVAC@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/
