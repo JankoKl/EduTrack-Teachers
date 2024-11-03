@@ -21,9 +21,11 @@
 
 ## Database Structure
 
-![Database Relationships](images/Database/Relations.png?raw=true "Database Relationships")
+### Relations Diagram:
+<img src="images/Database/Relations.png" alt="Database Relationships" title="Database Relationships">
 
-![ER Diagram](images/Database/ERD.png?raw=true "ER Diagram")
+### ER Diagram:
+<img src="images/Database/ERD.png" alt="ER Diagram" title="ER Diagram">
 
 ## Denormalization
 
